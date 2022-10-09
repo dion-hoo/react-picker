@@ -1,0 +1,25 @@
+.kp-picker-wheels {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 19px 24px;
+  &.kp-picker-wheels-seven {
+    height: 216px;
+  }
+  &.kp-picker-wheels-nine {
+    height: 272px;
+  }
+}
+
+.kp-picker-wheels-mark {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  width: calc(100% - 48px);
+  height: 38px;
+  margin-top: -19px;
+  border-radius: 8px;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.04);
+}
