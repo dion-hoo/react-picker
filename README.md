@@ -2,25 +2,19 @@
 
 <br/>
 
-### javascript를 이용해 Native와 같은 data Picker UI개발
+## 😁 Native와 같은 Picker UI개발
 
----
+<div style="display: flex;">
+   <img width="49%" src="https://user-images.githubusercontent.com/98207579/194822730-7a40994b-a6e7-4902-b99c-9ac4d2ffb43f.gif"/>
 
-<br />
-
-### Result
-
-<div style="display: flex; justify-content:space-between">
-<img width="49%" src="https://user-images.githubusercontent.com/98207579/194818814-00ac6946-60a7-4e8b-ab15-bdfa37de622c.gif"/>
-
-<img width="49%" src="https://user-images.githubusercontent.com/98207579/194818702-91895a50-f3e0-44e8-af12-e3f5816a55ab.gif"/>
-</div>
+<img width="49%" src="https://user-images.githubusercontent.com/98207579/194822774-e4d5b1d3-96ac-4c2d-9cde-63708419b030.gif"/>
+  </div>
 
 <br /><br />
 
 | PROP         |                           의미                           | 기본값 |
 | ------------ | :------------------------------------------------------: | -----: |
-| `list`       |                       Picker List                        |   null |
+| `list`       |                       Picker List                        |        |
 | `rows`       |                     Picker Max rows                      |      7 |
 | `selected`   |                      Initial value                       |   null |
 | `onSelected` | onChange했을때, value, index를 callback으로 받을 수 있다 |        |
