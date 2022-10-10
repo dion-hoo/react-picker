@@ -1,4 +1,4 @@
-.kp-picker-wheels-list {
+.WheelsList {
   position: relative;
   flex: 1;
   height: 100%;
@@ -40,9 +40,9 @@
       margin-top: -19px;
       backface-visibility: hidden;
       user-select: none;
-      &.kp-picker-wheels-active {
+      &.WheelsList--active {
         p {
-          color: #000;
+          color: #120c0c;
         }
       }
       p {
@@ -50,8 +50,32 @@
         white-space: nowrap;
         overflow: hidden;
         pointer-events: none;
-        font-size: 24px;
-        color: gray;
+        font-size: 23px;
+        line-height: 38px;
+        color: rgba(60, 57, 57, 0.5);
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .WheelsList {
+    &::before {
+      background: linear-gradient(#100f0f 0%, rgba(255, 255, 255, 0) 100%);
+    }
+    &::after {
+      background: linear-gradient(rgba(255, 255, 255, 0) 0%, #100f0f 100%);
+    }
+    ul {
+      li {
+        &.WheelsList--active {
+          p {
+            color: #fcfcfc;
+          }
+        }
+        p {
+          color: rgba(250, 250, 250, 0.4);
+        }
       }
     }
   }

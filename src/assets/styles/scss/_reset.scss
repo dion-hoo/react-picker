@@ -1,3 +1,5 @@
+@import './_font.scss';
+
 html,
 body,
 div,
@@ -82,8 +84,8 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: 'Noto Sans KR', system-ui, Arial, sans-serif;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
 }

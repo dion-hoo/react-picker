@@ -1,18 +1,20 @@
-.kp-picker-wheels {
+.Wheels {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   padding: 19px 24px;
-  &.kp-picker-wheels-seven {
+  background-color: #fff;
+  &.Wheels--seven {
     height: 216px;
   }
-  &.kp-picker-wheels-nine {
+  &.Wheels--nine {
     height: 272px;
   }
 }
 
-.kp-picker-wheels-mark {
+.Wheels__mark {
   position: absolute;
   top: 50%;
   left: 24px;
@@ -22,4 +24,14 @@
   border-radius: 8px;
   pointer-events: none;
   background-color: rgba(0, 0, 0, 0.04);
+}
+
+@media (prefers-color-scheme: dark) {
+  .Wheels {
+    background-color: #100f0f;
+  }
+
+  .Wheels__mark {
+    background-color: rgba(255, 255, 255, 0.06);
+  }
 }
