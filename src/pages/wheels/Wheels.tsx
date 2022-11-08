@@ -1,4 +1,4 @@
-import { forwardRef, useEffect } from 'react';
+import { forwardRef } from 'react';
 
 import classNames from 'classnames';
 
@@ -21,8 +21,16 @@ export const Wheels = forwardRef<HTMLDivElement, WheelsProps>(({ className, rows
       ref={ref}
       {...restProps}
     >
-      {wheelsData.map(({ list, selected, onSelected }, index) => (
-        <WheelsList key={index} rows={rows} list={list} selected={selected} onSelected={onSelected} />
+      {wheelsData.map(({ list, initialValue, wheelsTo, wheelsSmoothTo, onChange }, index) => (
+        <WheelsList
+          key={index}
+          rows={rows}
+          list={list}
+          initialValue={initialValue}
+          wheelsTo={wheelsTo}
+          wheelsSmoothTo={wheelsSmoothTo}
+          onChange={onChange}
+        />
       ))}
 
       <mark className="Wheels__mark" />
