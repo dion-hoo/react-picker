@@ -12,9 +12,11 @@
 
 <br /><br />
 
-| PROP         |                           의미                           | 기본값 |
-| ------------ | :------------------------------------------------------: | -----: |
-| `list`       |                       Picker List                        |        |
-| `rows`       |                     Picker Max rows                      |      7 |
-| `selected`   |                      Initial value                       |   null |
-| `onSelected` | onChange했을때, value, index를 callback으로 받을 수 있다 |        |
+| PROP             |                           의미                           |        기본값 |
+| ---------------- | :------------------------------------------------------: | ------------: |
+| `list`           |                       Picker List                        |               |
+| `rows`           |                     Picker Max rows                      |             7 |
+| `initialValue`   |                      Initial value                       |          null |
+| `wheelsTo`       |                    설정한 값으로 이동                    | { target: ""} |
+| `wheelsSmoothTo` |               설정한 값으로 부드럽게 이동                | { target: ""} |
+| `onChange`       | onChange했을때, value, index를 callback으로 받을 수 있다 |               |
