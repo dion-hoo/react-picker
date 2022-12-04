@@ -4,7 +4,7 @@ import { Wheels } from '~/pages/wheels/Wheels';
 
 import './App.scss';
 
-function App() {
+const App = () => {
   const year = new Date().getFullYear();
   const month = new Date().getMonth() + 1;
   const day = new Date().getDate();
@@ -65,7 +65,7 @@ function App() {
             },
           },
           {
-            list: list,
+            list: list1,
             initialValue: '9일',
             wheelsSmoothTo: myDay,
           },
@@ -73,6 +73,6 @@ function App() {
       />
     </div>
   );
-}
+};
 
 export default App;
